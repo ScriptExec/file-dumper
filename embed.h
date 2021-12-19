@@ -6,7 +6,7 @@
 
 namespace stde
 {
-	void export_embed(unsigned char data[], const char* filename, size_t size)
+	void export_embed(const char* filename, unsigned char data[], size_t size)
 	{
 		std::ofstream out(filename, std::ios::binary);
 		if (out.is_open() and out.good())
